@@ -1,7 +1,8 @@
-///fengh16. 17.06.29
+///fengh16. 17.06.29 v1.0
+///fengh16. 17.06.30 v1.1
 ///Arduino nano
 ///接口：摇杆：x-A1；y-A0；z-D2
-///接口：LED点阵：DIN = 12, CS = 11, CLK = 10
+///接口：LED点阵1（上面的）：DIN = 12, CS = 11, CLK = 10；2：CLK = 10, DIN2 = 13, CS2 = 7
 
 #include "LedControl.h"
 
