@@ -8,9 +8,9 @@
 #define A0 0
 using namespace std;
 
-extern int PushX, PushY, PushZ, nowx, nowy, BodyX[64], BodyY[64], BodyLen, x, y, i, FoodX, FoodY, Map[8][8], FoodShow, TarX, TarY, p;
+extern int PushX, PushY, PushZ, nowx, nowy, BodyX[128], BodyY[128], BodyLen, x, y, i, FoodX, FoodY, Map[8][16], FoodShow, TarX, TarY, p, nowDire;
 
-extern int Dire;//Dire表示蛇的方向：上下左右分别是1234
+extern int Dire;//Dire表示蛇的方向：上下右左分别是1234
 
 void pinMode(int a, int b) {};
 
@@ -76,7 +76,7 @@ Se::~Se()
 int analogRead(int t)
 {
 	int m;
-	cout << t << "大于750向左向上！input:";
+	cout << t << "   大于756向右向上！请输入模拟信号:   ";
 	cin >> m;
 	cout << endl;
 	return m;
@@ -85,7 +85,7 @@ int analogRead(int t)
 int digitalRead(int k)
 {
 	int p;
-	cout << k << "Diginput:";
+	cout << k << "   请输入数字信号:   ";
 	cin >> p;
 	cout << endl;
 	system("cls");
@@ -117,6 +117,6 @@ int main()
 	while (true)
 	{
 		loop();
-		cout << "现在： " << orders[Dire - 1] << endl;
+		cout << "现在方向： " << orders[Dire - 1] << endl;
 	}
 }
