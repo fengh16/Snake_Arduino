@@ -111,6 +111,7 @@ void loop();
 
 int main()
 {
+	nowDire = 3;
 	Dire = 3;
 	setup();
 	while (true)
