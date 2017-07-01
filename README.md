@@ -18,7 +18,7 @@ This is **a snake program** based on `Arduino Nano`.
 
 # 使用说明
 
-###　　这是一个基于Arduino Nano搭建的一个贪吃蛇游戏机。
+### 　　这是一个基于Arduino Nano搭建的一个贪吃蛇游戏机。
 
 ### 使用器材
 
